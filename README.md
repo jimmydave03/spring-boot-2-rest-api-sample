@@ -14,15 +14,17 @@ mvn spring-boot:run
 
 Default port is 8080. But you can change by adding below line in application.properties file. 
 
-server.port=8096
+<b>server.port=8096</b>
 
 In this example we are using H2 db as datasource. If you want to use Mysql then put below config in properties file.
 
+<pre>
 spring.jpa.database=default
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLDialect
 spring.datasource.driverClassName=com.mysql.jdbc.Driver
 spring.datasource.jdbcUrl = jdbc:mysql://localhost:3306/StudentDB?useUnicode=yes&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
 spring.datasource.username = root
 spring.datasource.password = root
+</pre>
 
 Enjoy coding!!
